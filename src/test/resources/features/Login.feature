@@ -1,7 +1,7 @@
 @sprint5 @login
 Feature: Login
 
-  @smoke
+  @regression
   Scenario Outline: valid admin and ess login
     When user enter "<Username>" and "<Password>"
     And user click on login button
