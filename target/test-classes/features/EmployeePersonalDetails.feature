@@ -9,7 +9,7 @@ Feature: EmployeePersonalDetails
     And User navigated to Employee List page
     When User enters valid employee Id "14063"
     And User clicks the search button
-    And User clicks the displayedd id 
+    And User clicks the displayedd id
     Then User navigated to Personal Detail Page
     And User click the Edit button
     When clear the firstName and lastName
@@ -19,6 +19,3 @@ Feature: EmployeePersonalDetails
     When User selects the gender
     When User selects the nationality
     Then User clicks the Save button
-    
-
- 

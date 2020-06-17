@@ -1,3 +1,4 @@
+#Author: syntaxteam
 @sprint6 @addEmployee
 Feature: Add new Employee
 
@@ -50,4 +51,4 @@ Feature: Add new Employee
 
   @regression
   Scenario: Adding multiple employees from excel
-    When user enters employee data from "EmployeeLoginCredential" excel sheet then employee is added
+    When user enters employee data from "EmployeeLoginCredentials" excel sheet then employee is added

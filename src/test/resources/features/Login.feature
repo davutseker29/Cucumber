@@ -1,7 +1,8 @@
+#Author: davutseker29@gmail.com
 @sprint5 @login
 Feature: Login
 
-  @regression
+  @smoke
   Scenario Outline: valid admin and ess login
     When user enter "<Username>" and "<Password>"
     And user click on login button
@@ -20,7 +21,7 @@ Feature: Login
 
     Examples: 
       | Username | Password   | ErrorMessage             |
-      | Admin    | Admin123   | Invalid credentials      |
-      | Hello    | Syntax123! | Invalid credentials      |
+      | Admin    | Admin123   | Invalid Credentials      |
+      | Hello    | Syntax123! | Invalid Credentials      |
       | Admin    |            | Password cannot be empty |
       |          | Syntax123! | Username cannot be empty |
