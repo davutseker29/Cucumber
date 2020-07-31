@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.hrms.runners.SmokeRunner
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 48.319 s <<< FAILURE! - in com.hrms.runners.SmokeRunner
-Login.Error message validation while invalid login  Time elapsed: 14.244 s  <<< FAILURE!
-org.junit.ComparisonFailure: Not correct error message is displayed expected:<Invalid [C]redentials> but was:<Invalid [c]redentials>
-
-Login.Error message validation while invalid login  Time elapsed: 10.618 s  <<< FAILURE!
-org.junit.ComparisonFailure: Not correct error message is displayed expected:<Invalid [C]redentials> but was:<Invalid [c]redentials>
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.284 s - in com.hrms.runners.SmokeRunner

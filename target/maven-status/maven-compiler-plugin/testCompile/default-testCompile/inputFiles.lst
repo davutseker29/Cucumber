@@ -6,12 +6,15 @@ C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\pages\DashboardPageE
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\pages\AddEmployeePageElements.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\steps\LoginSteps.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\utils\Constants.java
+C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\runners\SingleTestRunner.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\testbase\PageInitializer.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\steps\EmployeePersonalDetailsSteps.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\pages\LoginPageElements.java
+C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\steps\SauceDemoLoginSteps.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\steps\DashboardSteps.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\pages\PersonalDetailsPageElements.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\utils\CommonMethods.java
+C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\pages\SauceDemoLoginPageElements.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\pages\ViewEmployeePageElements.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\steps\AddEmployeeSteps.java
 C:\Users\User\eclipse-workspace\Hrms\src\test\java\com\hrms\testbase\BaseClass.java

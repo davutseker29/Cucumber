@@ -2,9 +2,9 @@
 @sprint5 @login
 Feature: Login
 
-  @smoke
+  @mvn
   Scenario Outline: valid admin and ess login
-    When user enter "<Username>" and "<Password>"
+    When user enter "<Usernamex>" and "<Password>"
     And user click on login button
     Then "<FirstName>" is successfully logged in
 
