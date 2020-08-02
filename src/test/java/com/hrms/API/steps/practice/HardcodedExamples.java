@@ -17,6 +17,8 @@ import static org.hamcrest.Matchers.*; //written manual
 import org.junit.*;
 import org.junit.runners.MethodSorters; //this is for @FixMethodOrder makes it work
 
+import com.hrms.API.utils.PayloadConstants;
+
 /**
  * we may use below - please comment out for now
  */
@@ -40,8 +42,8 @@ public class HardcodedExamples {
 	 */
 
 	static String baseURI = RestAssured.baseURI = "http://18.232.148.34/syntaxapi/api";
-	static String token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTYxNzYwODAsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTU5NjIxOTI4MCwidXNlcklkIjoiOTA1In0.HYVOFh_3oXrcJUpZ7YibWOLsnIsflYqqFX9I9sjVw60";
-	static String employeeID;
+	static String token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTYzMTEwMjksImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTU5NjM1NDIyOSwidXNlcklkIjoiOTA1In0.QzJcks8VNRier_f-VbgPefHTNbvQha1s-1fdDnAt2wE";
+	public static String employeeID;
 
 	public void sampleTestNotes() {
 
@@ -53,7 +55,7 @@ public class HardcodedExamples {
 		/**
 		 * JWT required for all calls- expires every 12 hours
 		 */
-		token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTYxNzYwODAsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTU5NjIxOTI4MCwidXNlcklkIjoiOTA1In0.HYVOFh_3oXrcJUpZ7YibWOLsnIsflYqqFX9I9sjVw60";
+		token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTYzMTEwMjksImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTU5NjM1NDIyOSwidXNlcklkIjoiOTA1In0.QzJcks8VNRier_f-VbgPefHTNbvQha1s-1fdDnAt2wE";
 
 		/**
 		 * Preparing / getOneEmployee.php request
@@ -318,7 +320,7 @@ public class HardcodedExamples {
 		 */
 
 		RequestSpecification updateCreatedEmployeeRequest = given().header("Content-Type", "application/json")
-				.header("Authorization", token).body(HardCodedConstants.updateCreatedEmpBody());
+				.header("Authorization", token).body(PayloadConstants.updateCreatedEmpBody());
 
 		/**
 		 * Storing response into updateCreatedEmployeeResponse
@@ -371,8 +373,7 @@ public class HardcodedExamples {
 		/**
 		 * Asserting expected first name
 		 */
-		getUpdatedEmployeeResponse.then().assertThat().body("employee[0].emp_firstname",
-				equalTo("syntaxUpdatedFirstName"));
+		getUpdatedEmployeeResponse.then().assertThat().body("employee[0].emp_middle_name", equalTo("mistik"));
 
 		/**
 		 * Verifying response employee ID is equal to globally stored employee ID
@@ -386,7 +387,7 @@ public class HardcodedExamples {
 
 		RequestSpecification partiallyUpdatingEmployeeRequest = given().header("Content-Type", "application/json")
 				.header("Authorization", token).body("{\n" + "  \"employee_id\": \"" + employeeID + "\",\n"
-						+ "  \"emp_firstname\": \"syntaxPartiallyUpdatedFirstName\"\n" + "}");
+						+ "  \"emp_firstname\": \"tosun\"\n" + "}");
 
 		Response partiallyUpdatingEmployeeResponse = partiallyUpdatingEmployeeRequest.when()
 				.patch("/updatePartialEmplyeesDetails.php");
