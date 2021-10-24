@@ -2,8 +2,11 @@ com\hrms\testbase\PageInitializer.class
 com\hrms\steps\DashboardSteps.class
 com\hrms\utils\ConfigsReader.class
 com\hrms\steps\EmployeeSearchSteps.class
+com\hrms\steps\SauceDemoLoginSteps.class
 com\hrms\testbase\BaseClass.class
+com\hrms\runners\SingleTestRunner.class
 com\hrms\pages\AddEmployeePageElements.class
+com\hrms\pages\SauceDemoLoginPageElements.class
 com\hrms\utils\CommonMethods.class
 com\hrms\pages\PersonalDetailsPageElements.class
 com\hrms\utils\ExcelUtility.class

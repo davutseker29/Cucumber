@@ -18,7 +18,7 @@ public class LoginPageElements extends CommonMethods{
 	@FindBy(name = "txtPassword")
 	public WebElement password;
 
-	@FindBy(css = "input#btnLogin")
+	@FindBy(id="btnLogin")
 	public WebElement loginBtn;
 
 	@FindBy(xpath = "//div[@id='divLogo']/img")

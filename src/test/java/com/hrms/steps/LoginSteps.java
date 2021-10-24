@@ -71,7 +71,7 @@ public class LoginSteps extends CommonMethods {
 		sendText(login.password, password);
 	}
 	
-	@Then("user see {string}")
+	@Then("user sees {string}")
 	public void user_see(String errorMessage) {
 		Assert.assertEquals("Not correct error message is displayed", errorMessage, login.errorMsg.getText());;
 	}
